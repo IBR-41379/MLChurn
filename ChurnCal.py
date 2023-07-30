@@ -28,6 +28,10 @@ decTree.fit(x_train,y_train)
 predTree = decTree.predict(x_test)
 print("Accuracy of the model: ", metrics.accuracy_score(y_test, predTree))
 
+#Comparing the predicted and actual values
+print("Predicted values: ", predTree[0:5])
+print("Actual values: \n", y_test[0:5])
+
 #Visualizing the decision tree
 # tree.plot_tree(decTree)
 # plt.show()
